@@ -25,6 +25,6 @@ public class Transaction {
 
     private User receiver;
 
-    private BigDecimal valor;
-    private LocalDateTime dataHora;
+    private BigDecimal value;
+    private LocalDateTime dateTime;
 }
