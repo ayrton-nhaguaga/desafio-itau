@@ -1,7 +1,9 @@
 package com.itau.itau.dto;
 
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import jakarta.validation.constraints.Positive;
 
-public record TransactionDTO(String senderId, String receiverId) {
+import java.math.BigDecimal;
+
+
+public record TransactionDTO(@Positive(message = "insira um valor positivo") BigDecimal value, String senderId, String receiverId) {
 }
